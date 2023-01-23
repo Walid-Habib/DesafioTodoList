@@ -1,0 +1,100 @@
+body {
+    display: grid;
+    place-items: center;
+    background: #95a5a6;
+    height: 100vh;
+    font-family: system-ui
+}
+
+main {
+    width: 500px;
+    height: 130px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #ecf0f1;
+    overflow: hidden;
+}
+
+h3 {
+    padding-bottom: 10px;
+    border-bottom: 1px gray ridge;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:hover,
+input:focus {
+    background-color: #feee;
+}
+
+input {
+    box-shadow: inset 1px 1px 3px #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #27ae60;
+    color: white;
+    border: double;
+    border-radius: 5px;
+    transition: background 0.5s;
+}
+
+button:hover {
+    background: bisque;
+    color: black;
+    cursor: pointer;
+}
+
+td button:hover {
+    background: red;
+    color: black;
+    cursor: pointer;
+}
+
+span {
+    border: inset;
+    font-weight: bold;
+    padding: 1px;
+    background:#95a5a6;
+    margin-bottom: 150px;
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    height: 243px;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+#totales {
+    text-align: center;
+    flex: 0 0 129px;
+}
+
+#totales p {
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#tabla {
+    flex: 1 0;
+    overflow-y: auto;
+    height: inherit;
+}
+
+thead {
+    position: sticky;
+    top: 0px;
+    background: #95a5a6;
+}
+tbody {
+    text-align: center;
+    border: ridge;
+    background:whitesmoke;
+    overflow-y: scroll;
+}

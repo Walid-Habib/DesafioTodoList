@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <h3><strong>Todo List</strong></h3>
+        <label for="agenda">Nueva tarea </label>
+        <br>
+        <input type="text"> <button>Agregar</button>
+        <section id="contenedor">
+            <div id="totales">
+                <p>Registros</p>
+                <span id="total">0</span>
+                <br><br>
+                <p>Realizados</p>
+                <span id="realizadas">0</span>
+            </div>
+            <div id="tabla">
+                <table id="items" border="3" style="border-collapse: collapse" bordercolor="#113366" width="350">
+                    <thead>
+                        <tr><strong>
+                                <th>ID</th>
+                                <th>Descripción</th>
+                                <th>Realizada</th>
+                                <th>Acción</th>
+                            </strong></tr>
+                    </thead>
+                    <tbody heigth="30"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
